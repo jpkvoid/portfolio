@@ -1,0 +1,35 @@
+
+body {
+  background: black;
+  font-family: monospace;
+  color: white;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5ch;
+  padding-right: 0.5ch;
+  border: 1px solid white;
+  width: 80ch;
+  background: black;
+}
+
+button {
+  color: white;
+  background: black;
+  border-color: white;
+}
+
+@media print {
+    p {  
+      font-size: 18pt;
+      color: black;
+      border: none;
+    }
+  }

@@ -1,0 +1,136 @@
+:root {
+    --accent-color: #ff5e00;
+}
+
+html {
+    font-size: 16px;
+}
+
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+body {
+    font-family: 'Major Mono Display', monospace;
+    margin: 0;
+    width: 100vw;
+    background-color: #b6d3c7;
+}
+
+header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+}
+
+/* #nav {
+    background-color: #b6d3c7;
+} */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #ff5500;
+}
+
+ul {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.artist-section {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+/* .artist-section:first-of-type {
+    padding-top: 100px;
+} */
+
+.accent {
+    color: var(--accent-color);
+}
+
+.artist-description {
+    position: relative;
+    background-color: aliceblue;
+    padding: 0.25rem 1rem;
+    top: -200px;
+    left: 350px;
+    width: 600px;
+}
+
+img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 800px;
+    object-fit: cover;
+    object-position: left;
+}
+
+.portrait {
+    width: 400px;
+}
+
+.portrait-bigger {
+    width: 600px;
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 16px;
+    }
+
+    .artist-section {
+        width: 100vw;
+        overflow: hidden;
+        padding-top: 220px;
+    }
+
+    .artist-description {
+        width: 300px;
+        left: calc(100vw - 300px);
+        top: -25px;
+        z-index: 999;
+    }
+
+    img {
+        width: 400px;
+        z-index: 999;
+    }
+
+    .portrait {
+        width: 400px;
+    }
+
+    .portrait-bigger {
+        width: 400px;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #nav {
+        /* visibility: hidden; */
+        font-size: 1rem;
+    }
+
+    #nav li {
+        margin: 1rem 0 0 0.2rem;
+    }
+
+    header {
+        background-color: #b6d3c780;
+        z-index: 1;
+    }
+}

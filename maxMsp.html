@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>jpk.max msp</title>
+  <link rel="stylesheet" href="styles.css">
+  </link>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header>
+    <nav class="center width">
+      <h1><a href="index.html" class="current">jpk.</a><em class="accent">max msp</em></h1>
+      <ul>
+        <li><a href="index.html" class="accent">home</a></li>
+        <li><a href="music.html" class="accent">music / audio-visual</a></li>
+        <li><a href="visuals.html" class="accent">visuals</a></li>
+        <li><a href="maxMsp.html" class="current">max/msp</a></li>
+        <li><a href="maxForLive.html" class="accent">max for live</a></li>
+        <li><a href="midiControllers.html" class="accent">midi controllers</a></li>
+        <li><a href="homeAccessories.html" class="accent">home accessories</a></li>
+        <li><a href="about.html" class="accent">about</a></li>
+        <li><a href="contact.html" class="accent">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="center width">
+    <h2><em>gymnopédie generator</em></h2>
+    <figure>
+      <div class="aspect-ratio">
+        <video width="900" controls class="accent">
+          <source src="maxmsp/gymnopedie_generator_demo.mp4" type="video/mp4">
+        </video>
+      </div>
+      <figcaption class="caption">
+        Based on the first phrase of Satie's Gymnopédie number 1, the Gymnopédie Generator has at its core a random bass
+        notes generator. From those notes the program determines the upper structure of the chord and plays it following
+        the original piece's comping pattern. At the same time it determines the notes to play on each chord and chooses
+        randomly the played note for each of the beats where the original melody would be, giving it its "broken
+        Gymnopédie" feel.<br><br>
+
+        The user can switch between major and minor chords at will (the program adapts the melody notes accordingly),
+        and can create new melodic pattern using the sequencer-like interface of the melody customizer.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section class="center width">
+    <h2><em>midify</em></h2>
+    <figure>
+      <div class="aspect-ratio">
+        <video width="900" controls class="accent">
+          <source src="maxmsp/midify_demo.mp4" type="video/mp4">
+        </video>
+      </div>
+      <figcaption class="caption">
+        Midify is a work in progress. At its base (current state) it takes a mono audio input and turns it into midi
+        notes that it sends in this case to the Novation MiniNova. Since the demo video it has a exact pitch
+        reproduction added, meaning it can reproduce bends and detunes from the input.<br><br>
+
+        The next step will be, when I have enough time on my hands, to use the amplitude of the input signal and map it
+        to a relevant setting of the receiving synthesizer to add an organic feel to the resulting sound.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section class="center width">
+    <h2><em>LIVE (poly & mono synth patch)</em></h2>
+    <figure>
+      <div class="aspect-ratio">
+        <img width="900" src="maxmsp/LIVE_screenshot.jpg" alt="Live screenshot" class="accent">
+      </div>
+      <figcaption class="caption">
+        LIVE is my first finished performance patch. It comprises 2 instances of the same home made subtractive
+        synthesizer: monophonic in blue and polyphonic in green.<br><br>
+
+        I also made the vocoder myself, with a switch to set which of the synthesizers is used as carrier, letting the
+        other one pass through to the effect chain.<br><br>
+
+        The effect chain, except for the overdrive, is composed of BEAP modules included with Max. They are however
+        modified in order to accept storing and recalling presets.<br><br>
+
+        This patch was created for the purpose of limiting the number of instrument to carry. For a band I still play
+        with in Switzerland, I needed a way to fit most of my synthesizers in my laptop not to have to carry every
+        hardware synth from the Netherlands. With this patch I can simply borrow a MIDI keyboard wherever I need to play
+        and I have all of my setup with me on my computer.
+      </figcaption>
+    </figure>
+  </section>
+
+  <footer>
+    <ul class="right">
+      <li class="current">©jpk.2022</li>
+      <li><a href="https://www.instagram.com/jpk_void/" class="accent">instagram </a></li>
+      <li><a href="https://www.facebook.com/jupallkoch" class="accent">facebook </a></li>
+      <li><a href="https://open.spotify.com/artist/7AaqiuiFv3uVtkwmUA0Bwy?si=CEBnTqBPSs6NoORW5ODmzA"
+          class="accent">spotify </a></li>
+    </ul>
+  </footer>
+
+  <!-- <script src="js/changeTheme.js"></script> -->
+
+</body>
+
+</html>
